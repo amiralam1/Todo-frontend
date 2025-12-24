@@ -1,16 +1,65 @@
-# React + Vite
+📝 Full-Stack Todo Application
+A modern, responsive Todo application built with React and Node.js/Express. This project demonstrates full-stack development skills including RESTful API design, state management, and responsive UI design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React
+Node.js
+Express.js
+TailwindCSS
+Vite
 
-Currently, two official plugins are available:
+🌐 Live Demo
+Frontend: [Your Frontend URL]
+Backend API: https://todo-backend-production-cbc0.up.railway.app/api/todos
+✨ Features
+✅ Create new todos
+📖 Read and display all todos
+🔄 Update todo completion status
+🗑️ Delete todos
+⌨️ Keyboard support - Press Enter to add todos
+📱 Fully responsive design for all screen sizes
+🎨 Clean, modern UI with Tailwind CSS
+🛠️ Tech Stack
+Frontend
+Technology	Purpose
+React 18	UI Library
+Vite	Build Tool & Dev Server
+Tailwind CSS	Styling
+Axios	HTTP Client
+UUID	Unique ID Generation
+Backend
+Technology	Purpose
+Node.js	Runtime Environment
+Express.js	Web Framework
+Railway	Deployment Platform
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📁 Project Structure
+text
 
-## React Compiler
+todo-app/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── Navbar.jsx
+│   │   ├── assets/
+│   │   │   └── react.svg
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   ├── public/
+│   │   └── vite.svg
+│   ├── package.json
+│   └── vite.config.js
+│
+└── backend/
+    ├── server.js
+    ├── routes/
+    │   └── todos.js
+    ├── package.json
+    └── ...
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔌 API Endpoints
+Method	Endpoint	Description
+GET	/api/todos	Fetch all todos
+POST	/api/todos	Create a new todo
+PUT	/api/todos/:id	Toggle todo completion
+DELETE	/api/todos/:id	Delete a todo
