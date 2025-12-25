@@ -9,19 +9,22 @@
 body {
   font-family: "Kalam", cursive;
   font-weight: 400;
+  font-style: normal; /* Force normal, not italic */
 }
 
 .kalam-regular {
   font-family: "Kalam", cursive !important;
   font-weight: 400 !important;
+  font-style: normal !important; /* This is key - prevents italic */
 }
 
 .kalam-bold {
   font-family: "Kalam", cursive !important;
   font-weight: 700 !important;
+  font-style: normal !important;
 }
 
-/* Force consistent rendering on all elements */
-input, button, p, div, span {
-  font-family: inherit;
+/* Force normal style on all text elements */
+input, button, p, div, span, h1, h2, h3 {
+  font-style: normal !important;
 }
