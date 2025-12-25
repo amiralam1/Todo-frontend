@@ -82,7 +82,7 @@ function App() {
             onKeyDown={handleKeyDown}
             value={todo}
             type="text"
-            className="p-2 w-full focus:outline-none kalam-regular rounded-l-full"
+            className="p-2 w-full focus:outline-none kalam-regular rounded-l-full text-lg"
             placeholder="What do you need to do?"
           />
           <button
@@ -105,7 +105,7 @@ function App() {
               return (
                 <div
                   key={item.id}
-                  className="todo w-full kalam-regular text-gray-800 flex flex-row justify-between items-center gap-2 p-2"
+                  className="todo w-full kalam-regular text-lg text-gray-800 flex flex-row justify-between items-center gap-2 p-2"
                 >
                   <div className="flex gap-3 sm:gap-5 justify-start items-center flex-1 min-w-0">
                     <input
@@ -128,7 +128,7 @@ function App() {
                     onClick={() => {
                       handleDelete(item.id);
                     }}
-                    className="bg-blue-400 rounded-full p-2 px-3 sm:px-4 kalam-regular text-gray-800 cursor-pointer text-sm sm:text-base shrink-0"
+                    className="bg-blue-400 rounded-full text-base p-2 px-3 sm:px-4 kalam-regular text-gray-800 cursor-pointer sm:text-lg shrink-0"
                     type="button"
                   >
                     Delete

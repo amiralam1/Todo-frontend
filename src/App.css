@@ -13,11 +13,11 @@ body, * {
 
 .kalam-regular {
   font-family: "Patrick Hand", cursive !important;
-  font-weight: 400 !important;
+  font-weight: 400;
 }
 
 .kalam-bold {
   font-family: "Patrick Hand", cursive !important;
   font-weight: 700 !important;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
 }
