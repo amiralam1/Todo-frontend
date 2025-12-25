@@ -1,30 +1,26 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-style: normal; /* Force normal, not italic */
-}
-
-.kalam-regular {
-  font-family: "Kalam", cursive !important;
-  font-weight: 400 !important;
-  font-style: normal !important; /* This is key - prevents italic */
-}
-
-.kalam-bold {
-  font-family: "Kalam", cursive !important;
-  font-weight: 700 !important;
   font-style: normal !important;
 }
 
-/* Force normal style on all text elements */
-input, button, p, div, span, h1, h2, h3 {
+body {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Caveat", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.kalam-bold {
+  font-family: "Caveat", cursive !important;
+  font-weight: 700 !important;
   font-style: normal !important;
 }
