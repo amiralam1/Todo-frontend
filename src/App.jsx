@@ -117,8 +117,8 @@ function App() {
                     <p
                       className={
                         item.isCompleted
-                          ? "line-through  overflow-wrap"
-                          : " overflow-wrap"
+                          ? "line-through  overflow-wrap kalam-regular"
+                          : " overflow-wrap kalam-regular"
                       }
                     >
                       {item.todo}
