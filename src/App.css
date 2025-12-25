@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .kalam-light {
   font-family: "Kalam", cursive;
   font-weight: 300;
@@ -17,5 +21,8 @@
   font-family: "Kalam", cursive;
   font-weight: 700;
   font-style: normal;
+}
+input, button, p, div {
+  font-family: "Kalam", cursive !important;
 }
 
