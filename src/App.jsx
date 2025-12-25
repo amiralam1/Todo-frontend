@@ -82,12 +82,12 @@ function App() {
             onKeyDown={handleKeyDown}
             value={todo}
             type="text"
-            className="p-2 w-full focus:outline-none kalam-light rounded-l-full"
+            className="p-2 w-full focus:outline-none kalam-regular rounded-l-full"
             placeholder="What do you need to do?"
           />
           <button
             onClick={handleAdd}
-            className="bg-blue-400 rounded-e-full p-2 px-3 sm:px-4 kalam-light text-gray-800 cursor-pointer whitespace-nowrap"
+            className="bg-blue-400 rounded-e-full p-2 px-3 sm:px-4 kalam-regular text-gray-800 cursor-pointer whitespace-nowrap"
           >
             Save
           </button>
@@ -99,13 +99,13 @@ function App() {
             Your Todos
           </h2>
           {todos.length === 0 ? (
-            <p className="kalam-light">No todos to display</p>
+            <p className="kalam-regular">No todos to display</p>
           ) : (
             todos.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="todo w-full kalam-light text-gray-800 flex flex-row justify-between items-center gap-2 p-2"
+                  className="todo w-full kalam-regular text-gray-800 flex flex-row justify-between items-center gap-2 p-2"
                 >
                   <div className="flex gap-3 sm:gap-5 justify-start items-center flex-1 min-w-0">
                     <input
@@ -128,7 +128,7 @@ function App() {
                     onClick={() => {
                       handleDelete(item.id);
                     }}
-                    className="bg-blue-400 rounded-full p-2 px-3 sm:px-4 kalam-light text-gray-800 cursor-pointer text-sm sm:text-base shrink-0"
+                    className="bg-blue-400 rounded-full p-2 px-3 sm:px-4 kalam-regular text-gray-800 cursor-pointer text-sm sm:text-base shrink-0"
                     type="button"
                   >
                     Delete
