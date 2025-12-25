@@ -1,28 +1,22 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap');
 
-* {
+/* Remove the 300 and 700 weights, just use 400 */
+
+body, * {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.kalam-light {
-  font-family: "Kalam", cursive;
-  font-weight: 300;
-  font-style: normal;
 }
 
 .kalam-regular {
   font-family: "Kalam", cursive;
   font-weight: 400;
-  font-style: normal;
 }
 
 .kalam-bold {
   font-family: "Kalam", cursive;
   font-weight: 700;
-  font-style: normal;
+  font-size: 1.2em; /* Use size instead of weight for emphasis */
 }
-input, button, p, div {
-  font-family: "Kalam", cursive !important;
-}
-
