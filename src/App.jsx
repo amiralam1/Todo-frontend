@@ -5,7 +5,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-const API_URL = "https://todo-backend-production-cbc0.up.railway.app/api/todos";
+const API_URL = "https://todo-backend-d049.onrender.com";
 function App() {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
